@@ -6,7 +6,7 @@ locals {
   bucket_name = "stackguardian-${random_pet.random.id}"
 }
 module "storage_ref" {
-  source = "git@github.com:StackGuardian/terraform-aws-ec2-instance.git"
+  source = "git::https://github.com/StackGuardian/terraform-aws-ec2-instance.git"
 }
 
 
